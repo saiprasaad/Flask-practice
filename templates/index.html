@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        <h1>Home Page!</h1>
+        <p>Showing All numbers</p>
+        {% for x in range(0, 10) %}
+            {% print(x) %}
+        {% endfor %}
+        <p>Showing only even numbers</p>
+        {% for i in range(0,10) %}
+            {% if i % 2 == 0 %}
+                {% print(i) %}   
+            {% endif %}
+        {% endfor %}
+        <br />
+        <p>Showing names</p>
+        {% for i in content %}
+            <p>{{i}}</p>
+        {% endfor %}
+    </body>
+</html>
